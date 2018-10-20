@@ -253,14 +253,14 @@ def filter_since_until_dates(events, since_date=None, until_date=None):
                 filtered_events.append(e)
 
         elif since_date:
-                if created_at >= since_date:
-                    filtered_events.append(e)
-                else:
-                    break
+            if created_at >= since_date:
+                filtered_events.append(e)
+            else:
+                break
 
         elif until_date:
-                if created_at <= until_date:
-                    filtered_events.append(e)
+            if created_at <= until_date:
+                filtered_events.append(e)
 
     return filtered_events
 
